@@ -42,10 +42,19 @@ h2 {
     margin: 0;
     font-weight: 300;
 }
-body{
+.home {
     font-family: "Open Sans", "Franklin Gothic Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #C1E0F2;
     background-image: url("../img/guideway.svg"), url("../img/skyline.svg");
+    background-position: center bottom, center top;
+    background-attachment:fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 60%, auto 60%;
+}
+.accueil {
+    font-family: "Open Sans", "Franklin Gothic Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #C1E0F2;
+    background-image: url("../img/guideway.svg"), url("../img/skyline2.svg");
     background-position: center bottom, center top;
     background-attachment:fixed, fixed;
     background-repeat: no-repeat, no-repeat;
@@ -69,6 +78,15 @@ a:link {
     }
 }
 .train {
+    position:absolute;
+    bottom:60%;
+    left:110%;
+    animation-name: driveTrain;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.train2 {
     position:absolute;
     bottom:60%;
     left:110%;
