@@ -25,6 +25,12 @@
     float: right;
     vertical-align: middle;
 }
+@media all and (max-width: 1000px){
+    .socials {
+    float: none;
+    vertical-align: middle;
+}
+}
 .chinese{
     font-weight: 400;
 }
@@ -40,11 +46,19 @@ body{
     font-family: "Open Sans", "Franklin Gothic Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #C1E0F2;
     background-image: url("../img/guideway.svg"), url("../img/skyline.svg");
-    background-position: left bottom, left top;
+    background-position: center bottom, center top;
     background-attachment:fixed, fixed;
     background-repeat: no-repeat, no-repeat;
     background-size: auto 60%, auto 60%;
+}
+html, body {
+    height: 100%;
+    margin: 0;
     overflow: hidden;
+    position: relative;
+}
+a:link {
+  text-decoration: none;
 }
 @keyframes driveTrain {
     from {
