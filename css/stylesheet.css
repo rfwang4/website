@@ -4,21 +4,62 @@
     vertical-align: middle;
 }
 .header-content a {
-    color:#005C9E;
+    color:#3DAEFF;
 }
-.header-content a:hover {
-    color: #006BB7;
+.bsky a:hover {
+    color:#1081F6;
+}
+.instagram a:hover {
+    color:#D13F74;
+}
+.linkedin a:hover {
+    color:#0A63BC;
+}
+.strava a:hover {
+    color:#F44A01;
+}
+.email a:hover {
+    color: #007ACC;
 }
 .socials {
     float: right;
     vertical-align: middle;
 }
+.chinese{
+    font-weight: 400;
+}
 h1 {
     margin: 0;
+    font-weight: 800;
 }
 h2 {
     margin: 0;
+    font-weight: 300;
 }
 body{
     font-family: "Open Sans", "Franklin Gothic Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #C1E0F2;
+    background-image: url("../img/guideway.svg"), url("../img/skyline.svg");
+    background-position: left bottom, left top;
+    background-attachment:fixed, fixed;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 60%, auto 60%;
+    overflow: hidden;
+}
+@keyframes driveTrain {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-300em);
+    }
+}
+.train {
+    position:absolute;
+    bottom:60%;
+    left:110%;
+    animation-name: driveTrain;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
