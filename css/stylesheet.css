@@ -89,6 +89,9 @@ a:link {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+.train img {
+    height: 3vh;
+}
 .train2 {
     position:absolute;
     bottom:60%;
@@ -104,7 +107,8 @@ a:link {
     position:absolute;
     left: 10%;
     top: 45%;
-    width: 400px;
+    min-width:400px;
+    width: 20%;
     border: solid;
     border-color: white;
     border-width: 8px;
