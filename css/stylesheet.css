@@ -207,6 +207,7 @@ a:link {
         top: 30%;
         width: 80%;
         left: 10%;
+        min-width:0;
     }
     .wf-first {
         font-size: 24pt;
