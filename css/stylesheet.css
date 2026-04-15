@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
 .open-sans {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -48,14 +49,20 @@ h2 {
     font-weight: 300;
     font-size:2.6vh;
 }
+footer {
+    text-align: center;
+    font-size: 1.8vh;
+}
 .home {
-    font-family: "Open Sans", "Franklin Gothic Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #C1E0F2;
     background-image: url("../img/guideway.svg"), url("../img/skyline.svg");
     background-position: center bottom, center top;
     background-attachment:fixed, fixed;
     background-repeat: no-repeat, no-repeat;
     background-size: auto 60%, auto 60%;
+}
+.sitewide {
+    font-family: "Open Sans", "Franklin Gothic Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .accueil {
     font-family: "Open Sans", "Franklin Gothic Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -66,14 +73,30 @@ h2 {
     background-repeat: no-repeat, no-repeat;
     background-size: auto 60%, auto 60%;
 }
-html, body {
+.frontpage, .home {
     height: 100%;
     margin: 0;
     overflow: hidden;
     position: relative;
 }
+.contentpage, .content {
+    overflow-x: hidden;
+}
 a:link {
   text-decoration: none;
+}
+details {
+    background-color: #F2EAE0;
+    border: 5px solid #9AB17A;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 2vh;
+}
+details:hover {
+    background-color: #EFD9BD;
+}
+summary {
+    font-size: 2.4vh;
 }
 .bicycle {
     position: absolute;
@@ -101,15 +124,6 @@ a:link {
 .train img {
     height: 3vh;
 }
-.train2 {
-    position:absolute;
-    bottom:60%;
-    left:110%;
-    animation-name: driveTrain;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
 .sign {
     color:white;
     background:white;
@@ -121,6 +135,9 @@ a:link {
     border: solid;
     border-color: white;
     border-width: 8px;
+}
+.sign a {
+    color: white;
 }
 .sign a:visited {
     color:white;
@@ -184,6 +201,9 @@ a:link {
     border-radius:10px;
     padding: 0 10px 0 10px;
 }
+.roundel:hover {
+    background:#C64949;
+}
 .arrow-vertical {
     padding: 5px 14px 5px 14px;
     vertical-align: middle;
@@ -209,11 +229,70 @@ a:link {
     left: 20%;
     top: 50%;
 }
+.name {
+    color: black !important;
+}
+.name a:visited {
+    color: black;
+}
+.name a:hover {
+    text-decoration: underline black 2px;
+    
+}
+.topnav {
+    height: 20vh;
+    background-color: #C1E0F2;
+    background-image: url("../img/banner.svg"), url("../img/banner2.svg");
+    background-position: right bottom, left bottom;
+    background-repeat: no-repeat, repeat-x;
+    background-size: auto 100%, auto 100%;
+}
+.back {
+    position: fixed;
+    float: right;
+    height: 12vh;
+    bottom: 20px;
+    right: 20px;
+}
+.content {
+    margin: 0;
+    position: relative;
+}
+.body-text {
+    margin-top: 6vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+}
+.body-text h1 {
+    font-size: 3.6vh;
+}
+.body-text p {
+    color:black;
+    font-size: 2.4vh;
+}
+.body-text a {
+    text-decoration: underline;
+    color:black;
+}
+.body-text a:visited {
+    color: black;
+}
+.body-text img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3vh;
+}
+.notice p {
+    margin-block-end: 0;
+}
 @media all and (max-width: 500px){
     .socials {
         float: none;
         vertical-align: middle;
         font-size:3vh;
+    }
+    .socials-pages {
+        display: none;
     }
     .sign {
         top: 30%;
@@ -239,6 +318,13 @@ a:link {
     }
     .sign-pole {
         left: 45%;
+    }
+    .body-text {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    .body-text p {
+        font-size: 2vh;
     }
 }
 @media all and (max-width: 1500px){
